@@ -1,0 +1,147 @@
+.navbar {
+    background-color: rgb(1, 61, 125);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.logo-container h2 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: rgb(1, 61, 125);
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-container:hover .dropdown-menu {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    padding: 8px 20px;
+    display: block;
+}
+
+.container-searchbar input {
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #fff;
+    width: 230px;
+}
+
+.container-searchbar i {
+    color: #fff;
+}
+
+.container-searchbar button {
+    padding: 7px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.searchbar {
+    background-color: transparent;
+    border: solid 2px #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchbar input::placeholder {
+    color: #ffffffcd;
+    font-size: 20px;
+}
+
+.searchbar:hover {
+    transform: scale(1.05);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}

@@ -1,0 +1,133 @@
+.form {
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 16px;
+    align-items: center;
+    background-color: rgba(1, 61, 125, 0.886);
+    box-shadow: 5px 2px 30px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    align-items: center;
+    margin: 20px auto 50px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+input.text::placeholder{
+    color: #cccccc;
+
+}
+
+input.text {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    padding: 30px 0;
+    outline: none;
+}
+
+input.text::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: solid 2px #fff;
+    outline: none;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+	height: 170px;
+    color: #fff;
+}
+
+textarea::placeholder {
+    color: #cccccc;
+}
+
+input.invia {
+    font-size: 20px;
+    background-color: transparent;
+    border: solid 1px #fff;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 700px;
+    width: auto;
+    margin-top: 0px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input.invia:hover {
+    background-color: rgb(2, 45, 90);
+}
+
+.link-contatti ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.link-contatti a {
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-contatti a:hover {
+    color: rgb(1, 61, 125)
+}
+
+.desc-contatti {
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;
+    word-wrap: break-word;
+    padding-bottom: 20px;
+}
+
+.desc-contatti a {
+    text-decoration: none;
+    color: rgb(1, 61, 125);
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: none;
+        transform: scale(0.95);
+    }
+
+    .form:hover{
+        transform: scale(0.95);
+    }
+
+    input.text:hover {
+        border: solid 2px #fff;
+    }
+
+    textarea:hover {
+        border: solid 2px #fff;
+    }
+
+    .desc-contatti {
+        font-size: 14px;
+        max-width: 280px;
+        padding-bottom: 10px;
+    }
+}

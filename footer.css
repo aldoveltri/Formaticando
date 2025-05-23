@@ -1,0 +1,51 @@
+footer {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footerlinks {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.footerlinks ul a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+.footerlinks ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.footerlinks a:hover {
+    color: rgb(1, 61, 125);
+}
+
+.aldo {
+	font-size: 12px;
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+.aldo a {
+	text-decoration: none;
+	color: rgb(1, 61, 125);
+}
+
+@media screen and (max-width: 480px) {
+   .footerlinks ul {
+        display: none;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}

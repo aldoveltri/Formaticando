@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.titolo {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(1, 61, 125);
+    margin-bottom: 40px;
+}
+
+.desc {
+    font-size: 25px;
+    margin: auto;
+    text-align: justify;
+    max-width: 1000px;
+    word-wrap: break-word;
+    padding-bottom: 20px;
+}
+.aula {
+    display: block;
+    margin: 20px auto;
+    width: 700px;
+    border-radius: 30px;
+    box-shadow: 5px 2px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.aula:hover {
+    transform: scale(1.05);
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;   
+}
+
+.monaco {
+    width: 700px;
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: 5px 2px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.monaco:hover{
+    transform: scale(1.05);
+}
+
+.back-top {
+    background-color: rgb(1, 61, 125);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+}
+
+.back-top img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .titolo {
+        font-size: 20px;
+        margin-top: 10px;
+        margin: 0 20px 20px 20px;
+
+    }
+    .desc {
+        font-size: 14px;
+        max-width: 280px;
+        padding-bottom: 10px;
+    }
+    .aula {
+        margin: 20px auto;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 5px 2px 30px rgba(0, 0, 0, 0.5);
+        transition: none;
+    }
+    .aula:hover {
+        transform: scale(1.0);
+    }
+
+    .iframe {
+        margin-top: 50px;
+    }
+
+    .monaco {
+        width: 300px;
+        height: 250px;
+        border-radius: 15px;
+        box-shadow: 5px 2px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .monaco:hover {
+        transform: scale(1);
+    }
+}

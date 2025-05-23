@@ -1,0 +1,80 @@
+.classi {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.classe {
+    max-width: 350px;
+    margin: auto;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 4px rgb(1, 61, 125);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.classe h4 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(1, 61, 125);
+}
+
+.classe p {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.classe .btn {
+    margin-top: 20px;
+    padding: 20px;
+    border: solid 2px #000;
+    border-radius: 15px;
+    font-size: 20px;
+    color: rgb(1, 61, 125);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.classe:hover{
+    transform: scale(1.05);
+}
+
+.classe .btn:hover {
+    background-color: rgb(1, 61, 125) !important;
+    color: #fff;
+    border: solid 2px rgb(1, 61, 125) !important;
+}
+
+@media screen and (max-width: 480px) {
+    .classi {
+        margin-top: 15px;
+        gap: 25px;
+        transform: scale(0.85);
+    }
+
+    .classe {
+        padding: 20px;
+        max-width: 320px;
+    }
+
+    .classe .btn {
+        transform: scale(0.9);
+    }
+
+    .classe .btn:hover {
+        background-color: transparent !important;
+        border: solid 2px #000 !important;
+        color: rgb(1, 61, 125);
+        transform: scale(0.9);
+    }
+
+    .classe:hover {
+        transform: scale(1);
+    }
+}
